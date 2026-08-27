@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hindi Voice Studio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>◉</span> HINDI VOICE
+    </div>
+
+    <div class="nav-badge">
+      AI VOICE STUDIO
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="eyebrow">NEXT GENERATION HINDI TTS</div>
+
+      <h1>
+        Give Your Words
+        <span>a Voice.</span>
+      </h1>
+
+      <p>
+        Create natural Hindi voices with expressive AI.
+      </p>
+    </section>
+
+
+    <section class="studio-card">
+
+      <div class="editor-header">
+        <div>
+          <h2>Your Script</h2>
+          <p>Enter the Hindi text you want to hear.</p>
+        </div>
+
+        <div class="counter">
+          <span id="charCount">0</span>/5000
+        </div>
+      </div>
+
+      <textarea
+        id="textInput"
+        maxlength="5000"
+        placeholder="यहाँ अपना Hindi text लिखें...
+
+उदाहरण:
+आज से आपकी कहानी बदलने वाली है।"
+      ></textarea>
+
+
+      <div class="section-heading">
+        <span>VOICE STYLE</span>
+        <small>Choose your character</small>
+      </div>
+
+      <div id="voiceGrid" class="voice-grid"></div>
+
+
+      <div class="control-grid">
+
+        <div class="control-box">
+          <label>EMOTION</label>
+
+          <select id="emotion">
+            <option>Natural</option>
+            <option>Happy</option>
+            <option>Sad</option>
+            <option>Angry</option>
+            <option>Excited</option>
+            <option>Calm</option>
+            <option>Dramatic</option>
+          </select>
+        </div>
+
+
+        <div class="control-box">
+          <label>SPEED</label>
+
+          <select id="speed">
+            <option>Slow</option>
+            <option selected>Medium</option>
+            <option>Fast</option>
+          </select>
+        </div>
+
+
+        <div class="control-box">
+          <label>DELIVERY</label>
+
+          <select id="delivery">
+            <option>Natural</option>
+            <option>Cinematic</option>
+            <option>Professional</option>
+            <option>Casual</option>
+            <option>Dramatic</option>
+          </select>
+        </div>
+
+      </div>
+
+
+      <button id="generateBtn" class="generate-btn">
+        <span>✦</span>
+        Generate Voice
+        <span class="arrow">→</span>
+      </button>
+
+
+      <div id="status" class="status"></div>
+
+
+      <div id="audioBox" class="audio-box">
+
+        <div class="audio-title">
+          <span>Generated Voice</span>
+          <span class="ready">READY</span>
+        </div>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <a
+          id="downloadBtn"
+          class="download-btn"
+          download="hindi-voice.wav"
+        >
+          ↓ Download Audio
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>HINDI VOICE STUDIO</span>
+    <span>Powered by AI</span>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
